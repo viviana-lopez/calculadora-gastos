@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Divisor de Gastos</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Divisor de Gastos</h1>
+
+    <!-- PERSONAS -->
+
+    <h2>Agregar Personas</h2>
+
+    <input
+      type="text"
+      id="nombrePersona"
+      placeholder="Nombre de la persona"
+    >
+
+    <button id="btnAgregarPersona">
+      Agregar Persona
+    </button>
+
+    <ul id="listaPersonas"></ul>
+
+    <!-- GASTOS -->
+
+    <h2>Agregar Gasto</h2>
+
+    <input
+      type="text"
+      id="descripcion"
+      placeholder="Descripción del gasto"
+    >
+
+    <input
+      type="number"
+      id="monto"
+      placeholder="Monto"
+    >
+
+    <select id="pagador"></select>
+
+    <button id="btnAgregarGasto">
+      Agregar Gasto
+    </button>
+
+    <div id="listaGastos"></div>
+
+    <!-- BALANCES -->
+
+    <button id="btnCalcular">
+      Calcular Balances
+    </button>
+
+    <div id="resultado"></div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
