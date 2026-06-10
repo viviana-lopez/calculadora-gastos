@@ -1,0 +1,22 @@
+# version del docker compose
+version: '3.9'
+
+# Define los contenedores de la aplicación
+services:
+
+
+# para el contenedor divisor-gastos
+  divisor-gastos:
+
+    # indica que debe construir la imagen usando el dockerfile de la carpeta actual
+    build: .
+
+    # nombre personalizado del contenedor
+    container_name: divisor-gastos-app
+
+    #puertos que utiliza: puerto 8080 local, al puesto 80 del contenedor
+    ports:
+      - "8080:80"
+
+    # hace que el contenedor reinicie automaticamente
+    restart: always
