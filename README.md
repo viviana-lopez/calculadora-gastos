@@ -68,6 +68,12 @@ docker run -d -p 8080:80 divisor-gastos
 
 >Abrir en el navegador  http://localhost:8080
 
+# Docker hub
+
+* Enlace a la imagen publicada en Docker Hub https://hub.docker.com/repositories/lilith37
+
+![alt text](image.png)
+
 ## Autor
 
 Viviana López
