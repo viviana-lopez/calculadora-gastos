@@ -201,3 +201,13 @@ function calcularBalances() {
     resultado.appendChild(p);
   });
 }
+
+// MEJORA IMPLEMENTADA PARA EL RECUPERATORIO (AGREGUE EL LOCAL STORAGE)
+
+localStorage.setItem(
+  "gastos",
+  JSON.stringify(gastos)
+);
+
+const datos =
+  JSON.parse(localStorage.getItem("gastos"));
